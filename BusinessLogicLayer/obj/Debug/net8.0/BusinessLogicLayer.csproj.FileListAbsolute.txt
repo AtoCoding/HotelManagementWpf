@@ -30,3 +30,4 @@ D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\Busine
 D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\refint\BusinessLogicLayer.dll
 D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.pdb
 D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\ref\BusinessLogicLayer.dll
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.sourcelink.json

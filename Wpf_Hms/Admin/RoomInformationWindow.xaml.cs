@@ -28,9 +28,19 @@ namespace Wpf_Hms
 
         private void btnCreate_Click(object sender, RoutedEventArgs e)
         {
-            int countRoom = _Service.Count();
+            RoomDetailWindow roomDetailWindow = new(true, null!, dgHotel);
+            roomDetailWindow.Show();
+        }
 
-            RoomDetailWindow roomDetailWindow = new RoomDetailWindow(countRoom);
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            RoomInformation roomInformation = (RoomInformation)dgHotel.SelectedItem;
+            if(roomInformation == null)
+            {
+                MessageBox.Show("Please select a room to update");
+                return;
+            }
+            RoomDetailWindow roomDetailWindow = new(false, roomInformation, dgHotel);
             roomDetailWindow.Show();
         }
     }

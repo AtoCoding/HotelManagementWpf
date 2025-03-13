@@ -31,12 +31,12 @@
         <TextBox x:Name="txtPrice" Height="45" Width="227" Canvas.Left="223" Canvas.Top="480" TextWrapping="Wrap" TabIndex="4" />
 
         <Label Content="Status" Height="45" Width="107" Canvas.Left="61" Canvas.Top="544" Foreground="#ff4500" />
-        <ComboBox x:Name="cbxStatus" Height="45" Width="290" Margin="223,613,0,0" Background="#ff4500" TabIndex="5" FontWeight="Bold" FontSize="18"/>
+        <ComboBox x:Name="cbxStatus" Height="46" Width="290" Background="#ff4500" TabIndex="6" FontWeight="Bold" FontSize="18" Canvas.Left="223" Canvas.Top="544" />
 
         <Label Content="Room's type" Height="45" Width="147" Margin="58,615,0,0" Foreground="#ff4500"/>
-        <ComboBox x:Name="cbxRoomType" Height="46" Width="290" Background="#ff4500" TabIndex="6" FontWeight="Bold" FontSize="18" Canvas.Left="223" Canvas.Top="544" />
+        <ComboBox x:Name="cbxRoomType" Height="45" Width="290" Margin="223,613,0,0" Background="#ff4500" TabIndex="5" FontWeight="Bold" FontSize="18"/>
 
-        <Button x:Name="btnSave" Content="Save Room Infor" Height="50" Width="165" Margin="945,128,0,0" TabIndex="7" />
+        <Button x:Name="btnSave" Content="Save Room Infor" Height="50" Width="165" Margin="945,128,0,0" TabIndex="7" Click="btnSave_Click" />
         <Button x:Name="btnClose" Content="Close" Height="50" Width="165" Margin="945,208,0,0" TabIndex="8" />
     </Canvas>
 </Window>

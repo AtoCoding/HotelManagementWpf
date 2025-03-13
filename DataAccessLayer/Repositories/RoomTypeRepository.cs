@@ -25,6 +25,11 @@ namespace DataAccessLayer.Repositories
             return data;
         }
 
+        public int Count()
+        {
+            return _RoomTypes.Count;
+        }
+
         public bool Delete(int id)
         {
             RoomType? roomType = _RoomTypes.FirstOrDefault(x => x.RoomTypeID == id);

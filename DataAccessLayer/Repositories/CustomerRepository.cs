@@ -22,6 +22,11 @@ namespace DataAccessLayer.Repositories
             return data;
         }
 
+        public int Count()
+        {
+            return _Customers.Count;
+        }
+
         public bool Delete(int id)
         {
             Customer? customer = _Customers.FirstOrDefault(c => c.CustomerID == id);

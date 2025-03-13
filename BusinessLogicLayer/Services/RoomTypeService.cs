@@ -24,6 +24,11 @@ namespace BusinessLogicLayer.Services
             return _RoomTypeRepository.Add(data);
         }
 
+        public int Count()
+        {
+            return _RoomTypeRepository.Count();
+        }
+
         public bool Delete(int id)
         {
             return _RoomTypeRepository.Delete(id);

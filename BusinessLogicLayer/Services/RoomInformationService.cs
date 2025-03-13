@@ -14,14 +14,24 @@ namespace BusinessLogicLayer.Services
     {
         private readonly IRepository<RoomInformation> _RoomInformationRepository;
 
+        private readonly IRepository<RoomType> _RoomTypeRepository;
+
         public RoomInformationService()
         {
             _RoomInformationRepository = new RoomInformationRepository();
+            _RoomTypeRepository = new RoomTypeRepository();
         }
 
         public RoomInformation Add(RoomInformation data)
         {
-            return _RoomInformationRepository.Add(data);
+            if (data != null)
+            {
+                List<RoomType> roomTypes = _RoomTypeRepository.GetAll();
+                data.RoomType = roomTypes.FirstOrDefault(x => x.RoomTypeID == data.RoomTypeID);
+                return _RoomInformationRepository.Add(data);
+            }
+
+            return null!;
         }
 
         public int Count()
@@ -46,7 +56,14 @@ namespace BusinessLogicLayer.Services
 
         public RoomInformation? Update(RoomInformation data)
         {
-            return _RoomInformationRepository.Update(data);
+            if (data != null)
+            {
+                List<RoomType> roomTypes = _RoomTypeRepository.GetAll();
+                data.RoomType = roomTypes.FirstOrDefault(x => x.RoomTypeID == data.RoomTypeID);
+                return _RoomInformationRepository.Update(data);
+            }
+
+            return null!;
         }
     }
 }

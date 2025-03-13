@@ -46,16 +46,20 @@ namespace DataAccessLayer.Repositories
 
         public RoomInformation? Update(RoomInformation data)
         {
-            RoomInformation? roomInformation = _RoomInformations.FirstOrDefault(x => x.RoomID == data.RoomID);
-            if (roomInformation != null)
+            RoomInformation? dataSearched = _RoomInformations.FirstOrDefault(x => x.RoomID == data.RoomID);
+
+            if (dataSearched != null)
             {
-                roomInformation.RoomNumber = data.RoomNumber;
-                roomInformation.RoomDescription = data.RoomDescription;
-                roomInformation.RoomMaxCapacity = data.RoomMaxCapacity;
-                roomInformation.RoomStatus = data.RoomStatus;
-                roomInformation.RoomPricePerDate = data.RoomPricePerDate;
+                dataSearched.RoomNumber = data.RoomNumber;
+                dataSearched.RoomDescription = data.RoomDescription;
+                dataSearched.RoomMaxCapacity = data.RoomMaxCapacity;
+                dataSearched.RoomStatus = data.RoomStatus;
+                dataSearched.RoomPricePerDate = data.RoomPricePerDate;
+                dataSearched.RoomTypeID = data.RoomTypeID;
+                dataSearched.RoomType = data.RoomType;
             }
-            return roomInformation;
+
+            return dataSearched;
         }
 
         private List<RoomInformation> LoadRoomType(List<RoomInformation> roomInformations)

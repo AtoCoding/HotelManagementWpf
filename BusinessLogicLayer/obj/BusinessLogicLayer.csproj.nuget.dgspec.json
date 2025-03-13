@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\PRN212_Assignment1_HMS (1)\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {}
+    "E:\\Desktop\\PRN212_Assignment1_HMS\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\PRN212_Assignment1_HMS (1)\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
+    "E:\\Desktop\\PRN212_Assignment1_HMS\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\PRN212_Assignment1_HMS (1)\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+        "projectUniqueName": "E:\\Desktop\\PRN212_Assignment1_HMS\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
         "projectName": "BusinessLogicLayer",
-        "projectPath": "D:\\Desktop\\PRN212_Assignment1_HMS (1)\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+        "projectPath": "E:\\Desktop\\PRN212_Assignment1_HMS\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
         "packagesPath": "C:\\Users\\ntgba\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\PRN212_Assignment1_HMS (1)\\BusinessLogicLayer\\obj\\",
+        "outputPath": "E:\\Desktop\\PRN212_Assignment1_HMS\\BusinessLogicLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Desktop\\PRN212_Assignment1_HMS (1)\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "D:\\Desktop\\PRN212_Assignment1_HMS (1)\\DataAccessLayer\\DataAccessLayer.csproj"
+              "E:\\Desktop\\PRN212_Assignment1_HMS\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "E:\\Desktop\\PRN212_Assignment1_HMS\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "D:\\Desktop\\PRN212_Assignment1_HMS (1)\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "E:\\Desktop\\PRN212_Assignment1_HMS\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\PRN212_Assignment1_HMS (1)\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "E:\\Desktop\\PRN212_Assignment1_HMS\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "D:\\Desktop\\PRN212_Assignment1_HMS (1)\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "E:\\Desktop\\PRN212_Assignment1_HMS\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\ntgba\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\PRN212_Assignment1_HMS (1)\\DataAccessLayer\\obj\\",
+        "outputPath": "E:\\Desktop\\PRN212_Assignment1_HMS\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

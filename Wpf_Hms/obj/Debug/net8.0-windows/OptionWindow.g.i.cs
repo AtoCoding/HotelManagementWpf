@@ -109,7 +109,7 @@ namespace Wpf_Hms.Admin {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Wpf_Hms;V1.0.0.0;component/optionwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Wpf_Hms;component/optionwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\OptionWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -37,12 +37,8 @@ E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\Wpf_Hms.pdb
 E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\Wpf_Hms.genruntimeconfig.cache
 E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\ref\Wpf_Hms.dll
 E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\bin\Debug\net8.0-windows\appsettings.json
-E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\AdminMainWindow.g.cs
 E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\CustomerMainWindow.g.cs
-E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\DetailWindow.g.cs
-E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\AdminMainWindow.baml
 E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\CustomerMainWindow.baml
-E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\DetailWindow.baml
 D:\Desktop\PRN212_Assignment1_HMS (1)\Wpf_Hms\bin\Debug\net8.0-windows\Wpf_Hms.exe
 D:\Desktop\PRN212_Assignment1_HMS (1)\Wpf_Hms\bin\Debug\net8.0-windows\appsettings.json
 D:\Desktop\PRN212_Assignment1_HMS (1)\Wpf_Hms\bin\Debug\net8.0-windows\Wpf_Hms.deps.json
@@ -91,3 +87,11 @@ D:\Desktop\PRN212_Assignment1_HMS (1)\Wpf_Hms\obj\Debug\net8.0-windows\OptionWin
 D:\Desktop\PRN212_Assignment1_HMS (1)\Wpf_Hms\obj\Debug\net8.0-windows\Admin\RoomInformationWindow.g.cs
 D:\Desktop\PRN212_Assignment1_HMS (1)\Wpf_Hms\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
 D:\Desktop\PRN212_Assignment1_HMS (1)\Wpf_Hms\obj\Debug\net8.0-windows\Admin\RoomInformationWindow.baml
+E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\Admin\RoomDetailWindow.g.cs
+E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\Admin\RoomInformationWindow.g.cs
+E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\OptionWindow.g.cs
+E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\Admin\RoomDetailWindow.baml
+E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\Admin\RoomInformationWindow.baml
+E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\OptionWindow.baml
+E:\Desktop\PRN212_Assignment1_HMS\Wpf_Hms\obj\Debug\net8.0-windows\Wpf_Hms.sourcelink.json

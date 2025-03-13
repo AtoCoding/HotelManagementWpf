@@ -24,3 +24,4 @@ D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\DataAcces
 D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
 D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json

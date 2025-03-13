@@ -125,7 +125,7 @@ namespace Wpf_Hms {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Wpf_Hms;V1.0.0.0;component/customermainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Wpf_Hms;component/customermainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CustomerMainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

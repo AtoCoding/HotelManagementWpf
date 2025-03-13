@@ -54,6 +54,11 @@ namespace BusinessLogicLayer.Services
             }
         }
 
+        public int Count()
+        {
+            return _CustomerRepository.Count();
+        }
+
         public bool Delete(int id)
         {
             return _CustomerRepository.Delete(id);
