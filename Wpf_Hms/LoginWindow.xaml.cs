@@ -58,23 +58,6 @@ namespace Wpf_Hms
             {
                 MessageBox.Show("Invalid email or password");
             }
-
-            //if (isAuthenticated && isAdmin)
-            //{
-            //    AdminMainWindow adminWindow = new AdminMainWindow();
-            //    adminWindow.Show();
-            //    this.Close();
-            //}
-            //else if (isAuthenticated && !isAdmin)
-            //{
-            //    CustomerMainWindow customerWindow = new CustomerMainWindow();
-            //    customerWindow.Show();
-            //    this.Close();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Invalid email or password", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            //}
         }
 
         private void QuitButton_Click(object sender, RoutedEventArgs e)

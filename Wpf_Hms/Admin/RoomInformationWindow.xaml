@@ -39,8 +39,9 @@
             <StackPanel Margin="10,289,0,0" VerticalAlignment="Top">
                 <Button x:Name="btnCreate" Content="Create Hotel" Height="50" Width="185" TabIndex="4" Click="btnCreate_Click"/>
                 <Button x:Name="btnUpdate" Content="Update Hotel" Height="50" Width="185" TabIndex="5" Click="btnUpdate_Click" />
-                <Button x:Name="btnDelete" Content="Delete Hotel" Height="50" Width="185" TabIndex="6" />
-                <Button x:Name="btnQuit" Content="Quit" Height="50" Width="185" TabIndex="7" />
+                <Button x:Name="btnDelete" Content="Delete Hotel" Height="50" Width="185" TabIndex="6" Click="btnDelete_Click" />
+                <Button x:Name="btnBack" Content="Back to main menu" Height="50" Width="185" TabIndex="7" Click="btnBack_Click" />
+                <Button x:Name="btnQuit" Content="Quit" Height="50" Width="185" TabIndex="8" Click="btnQuit_Click" />
             </StackPanel>
         </StackPanel>
     </Canvas>

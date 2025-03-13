@@ -31,7 +31,14 @@ namespace DataAccessLayer.Repositories
         public bool Delete(int id)
         {
             RoomInformation? roomInformation = _RoomInformations.FirstOrDefault(x => x.RoomID == id);
-            return _RoomInformations.Remove(roomInformation!);
+
+            if (roomInformation != null)
+            {
+                roomInformation.RoomStatus = RoomStatus.Deleted;
+                return true;
+            }
+
+            return false;
         }
 
         public RoomInformation? Get(int id)

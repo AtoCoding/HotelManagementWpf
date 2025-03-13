@@ -131,5 +131,10 @@ namespace Wpf_Hms
             DgHotel.ItemsSource = _RoomInformationService.GetAll();
             DgHotel.Items.Refresh();
         }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
