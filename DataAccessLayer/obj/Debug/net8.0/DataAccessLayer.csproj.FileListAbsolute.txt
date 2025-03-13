@@ -1,0 +1,26 @@
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+E:\Desktop\PRN212_Assignment1_HMS\DataAccessLayer\bin\Debug\net8.0\appsettings.json
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\bin\Debug\net8.0\appsettings.json
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+D:\Desktop\PRN212_Assignment1_HMS (1)\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll

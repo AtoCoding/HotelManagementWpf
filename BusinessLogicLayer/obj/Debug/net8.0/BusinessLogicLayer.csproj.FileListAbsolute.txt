@@ -1,0 +1,32 @@
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.deps.json
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.dll
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.pdb
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\bin\Debug\net8.0\DataAccessLayer.dll
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfo.cs
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\obj\Debug\net8.0\Business.450209FB.Up2Date
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.dll
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\obj\Debug\net8.0\refint\BusinessLogicLayer.dll
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.pdb
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\obj\Debug\net8.0\ref\BusinessLogicLayer.dll
+E:\Desktop\PRN212_Assignment1_HMS\BusinessLogicLayer\bin\Debug\net8.0\appsettings.json
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\bin\Debug\net8.0\appsettings.json
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.deps.json
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.dll
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.pdb
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\bin\Debug\net8.0\DataAccessLayer.dll
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfo.cs
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\Business.450209FB.Up2Date
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.dll
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\refint\BusinessLogicLayer.dll
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.pdb
+D:\Desktop\PRN212_Assignment1_HMS (1)\BusinessLogicLayer\obj\Debug\net8.0\ref\BusinessLogicLayer.dll
