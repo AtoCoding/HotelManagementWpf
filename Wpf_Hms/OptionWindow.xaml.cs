@@ -22,7 +22,7 @@ namespace Wpf_Hms.Admin
         /// <summary>
         /// Checking window for admin or customer
         /// </summary>
-        public bool IsAdmin { get; set; } = false;
+        private readonly bool IsAdmin = false;
 
         public OptionWindow(bool isAdmin)
         {

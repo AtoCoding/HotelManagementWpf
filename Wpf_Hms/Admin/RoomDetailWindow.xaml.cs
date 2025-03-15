@@ -16,11 +16,11 @@ namespace Wpf_Hms
 
         private readonly IService<RoomType> _RoomTypeService;
 
-        private int NewRoomId { get; set; }
+        private int NewRoomId;
 
-        private bool IsCreateAction { get; set; }
+        private bool IsCreateAction;
 
-        private DataGrid DgHotel { get; set; }
+        private DataGrid DgHotel;
 
         public RoomDetailWindow(bool isCreateAction, RoomInformation roomInformation, DataGrid dgHotel)
         {
