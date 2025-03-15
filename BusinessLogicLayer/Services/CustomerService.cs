@@ -15,12 +15,15 @@ namespace BusinessLogicLayer.Services
 {
     public class CustomerService : IService<Customer>, IAccount<Customer>
     {
+        private static CustomerService _Instance = null!;
         private readonly IRepository<Customer> _CustomerRepository;
 
-        public CustomerService()
+        private CustomerService()
         {
-            _CustomerRepository = new CustomerRepository();
+            _CustomerRepository = CustomerRepository.GetInstance();
         }
+
+        public static CustomerService GetInstance() => _Instance ??= new CustomerService();
 
         public Customer Add(Customer data)
         {

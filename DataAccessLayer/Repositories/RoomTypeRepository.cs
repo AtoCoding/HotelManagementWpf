@@ -11,13 +11,16 @@ namespace DataAccessLayer.Repositories
 {
     public class RoomTypeRepository : IRepository<RoomType>
     {
-        private List<RoomType> _RoomTypes;
+        private static RoomTypeRepository _Instance = null!;
+        private readonly List<RoomType> _RoomTypes;
 
-        public RoomTypeRepository()
+        private RoomTypeRepository()
         {
             IConfiguration config = Utils.GetConfiguration();
             _RoomTypes = config.GetSection("RoomType").Get<List<RoomType>>() ?? [];
         }
+
+        public static RoomTypeRepository GetInstance() => _Instance ??= new RoomTypeRepository();
 
         public RoomType Add(RoomType data)
         {

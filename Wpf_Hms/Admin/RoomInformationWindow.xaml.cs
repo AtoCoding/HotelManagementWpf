@@ -16,7 +16,7 @@ namespace Wpf_Hms
         public RoomInformationWindow()
         {
             InitializeComponent();
-            _RoomInformationService = new RoomInformationService();
+            _RoomInformationService = RoomInformationService.GetInstance();
             LoadRoomInformation();
         }
 

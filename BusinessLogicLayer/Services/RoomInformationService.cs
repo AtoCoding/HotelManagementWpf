@@ -12,15 +12,17 @@ namespace BusinessLogicLayer.Services
 {
     public class RoomInformationService : IService<RoomInformation>
     {
+        private static RoomInformationService _Instance = null!;
         private readonly IRepository<RoomInformation> _RoomInformationRepository;
-
         private readonly IRepository<RoomType> _RoomTypeRepository;
 
-        public RoomInformationService()
+        private RoomInformationService()
         {
-            _RoomInformationRepository = new RoomInformationRepository();
-            _RoomTypeRepository = new RoomTypeRepository();
+            _RoomInformationRepository = RoomInformationRepository.GetInstance();
+            _RoomTypeRepository = RoomTypeRepository.GetInstance();
         }
+
+        public static RoomInformationService GetInstance() => _Instance ??= new RoomInformationService();
 
         public RoomInformation Add(RoomInformation data)
         {

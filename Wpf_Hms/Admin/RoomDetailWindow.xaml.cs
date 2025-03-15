@@ -25,8 +25,8 @@ namespace Wpf_Hms
         public RoomDetailWindow(bool isCreateAction, RoomInformation roomInformation, DataGrid dgHotel)
         {
             InitializeComponent();
-            _RoomInformationService = new RoomInformationService();
-            _RoomTypeService = new RoomTypeService();
+            _RoomInformationService = RoomInformationService.GetInstance();
+            _RoomTypeService = RoomTypeService.GetInstance();
             IsCreateAction = isCreateAction;
             DgHotel = dgHotel;
             SetDefaultData(roomInformation);

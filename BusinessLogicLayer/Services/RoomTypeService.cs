@@ -12,12 +12,15 @@ namespace BusinessLogicLayer.Services
 {
     public class RoomTypeService : IService<RoomType>
     {
+        private static RoomTypeService _Instance = null!;
         private readonly IRepository<RoomType> _RoomTypeRepository;
 
-        public RoomTypeService()
+        private RoomTypeService()
         {
-            _RoomTypeRepository = new RoomTypeRepository();
+            _RoomTypeRepository = RoomTypeRepository.GetInstance();
         }
+
+        public static RoomTypeService GetInstance() => _Instance ??= new RoomTypeService();
 
         public RoomType Add(RoomType data)
         {

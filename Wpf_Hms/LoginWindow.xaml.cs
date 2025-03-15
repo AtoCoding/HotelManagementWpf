@@ -26,7 +26,7 @@ namespace Wpf_Hms
         public LoginWindow()
         {
             InitializeComponent();
-            _CustomerService = new CustomerService();
+            _CustomerService = CustomerService.GetInstance();
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)

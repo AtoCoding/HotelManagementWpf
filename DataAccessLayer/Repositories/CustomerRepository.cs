@@ -5,9 +5,10 @@ namespace DataAccessLayer.Repositories
 {
     public class CustomerRepository : IRepository<Customer>
     {
+        private static CustomerRepository _Instance = null!;
         private List<Customer> _Customers;
 
-        public CustomerRepository()
+        private CustomerRepository()
         {
             Customer c1 = new Customer(1, "Adam", "0936668963", "adam@gmail.com", DateTime.Now, CustomerStatus.Active, "@1");
             Customer c2 = new Customer(2, "Eva", "0938938963", "eva@gmail.com", DateTime.Now, CustomerStatus.Active, "@1");
@@ -15,6 +16,8 @@ namespace DataAccessLayer.Repositories
             _Customers = new List<Customer>();
             _Customers = [c1, c2, c3];
         }
+
+        public static CustomerRepository GetInstance() => _Instance ??= new CustomerRepository();
 
         public Customer Add(Customer data)
         {
