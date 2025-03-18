@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataAccessLayer.Entities;
+﻿using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories.Interface;
 using Microsoft.Extensions.Configuration;
 
@@ -47,6 +42,11 @@ namespace DataAccessLayer.Repositories
         public List<RoomType> GetAll()
         {
             return _RoomTypes;
+        }
+
+        public List<RoomType> Search(string description, string typeName, int capacity)
+        {
+            return [];
         }
 
         public RoomType? Update(RoomType data)

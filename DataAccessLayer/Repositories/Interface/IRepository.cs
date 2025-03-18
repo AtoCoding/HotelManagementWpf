@@ -14,5 +14,6 @@ namespace DataAccessLayer.Repositories.Interface
         T? Get(int id);
         List<T> GetAll();
         int Count();
+        List<T> Search(string description, string typeName, int capacity);
     }
 }

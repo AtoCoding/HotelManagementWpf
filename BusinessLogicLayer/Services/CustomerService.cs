@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Threading.Tasks;
-using BusinessLogicLayer.Services.Interface;
+﻿using BusinessLogicLayer.Services.Interface;
 using DataAccessLayer;
 using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories;
@@ -75,6 +69,11 @@ namespace BusinessLogicLayer.Services
         public List<Customer> GetAll()
         {
             return _CustomerRepository.GetAll();
+        }
+
+        public List<Customer> Search(string description, string typeName, int capacity)
+        {
+            return [];
         }
 
         public Customer? Update(Customer data)

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BusinessLogicLayer.Services.Interface;
+﻿using BusinessLogicLayer.Services.Interface;
 using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories;
 using DataAccessLayer.Repositories.Interface;
@@ -45,6 +40,11 @@ namespace BusinessLogicLayer.Services
         public List<RoomType> GetAll()
         {
             return _RoomTypeRepository.GetAll();
+        }
+
+        public List<RoomType> Search(string description, string typeName, int capacity)
+        {
+            return [];
         }
 
         public RoomType? Update(RoomType data)

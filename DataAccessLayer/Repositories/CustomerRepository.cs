@@ -46,6 +46,11 @@ namespace DataAccessLayer.Repositories
             return _Customers;
         }
 
+        public List<Customer> Search(string description, string typeName, int capacity)
+        {
+            return [];
+        }
+
         public Customer? Update(Customer data)
         {
             Customer? customer = _Customers.FirstOrDefault(c => c.CustomerID == data.CustomerID);

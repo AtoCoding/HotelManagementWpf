@@ -54,6 +54,26 @@ namespace DataAccessLayer.Repositories
             return _RoomInformations;
         }
 
+        public List<RoomInformation> Search(string description, string typeName, int capacity)
+        {
+            List<RoomInformation> result = _RoomInformations.ToList();
+
+            if (!string.IsNullOrEmpty(description))
+            {
+                result.RemoveAll(x => !x.RoomDescription!.Contains(description));
+            }
+            if (!string.IsNullOrEmpty(typeName))
+            {
+                result.RemoveAll(x => !x.RoomType!.RoomTypeName!.Contains(typeName));
+            }
+            if (capacity > 0)
+            {
+                result.RemoveAll(x => x.RoomMaxCapacity != capacity);
+            }
+
+            return result;
+        }
+
         public RoomInformation? Update(RoomInformation data)
         {
             RoomInformation? dataSearched = _RoomInformations.FirstOrDefault(x => x.RoomID == data.RoomID);

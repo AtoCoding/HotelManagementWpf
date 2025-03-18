@@ -12,16 +12,16 @@
         ResizeMode="NoResize">
     <Canvas>
         <Label Content="Hotel's room Information" Canvas.Left="28" Canvas.Top="31" Height="80" Width="580" FontWeight="Heavy" FontSize="45" FontStyle="Italic" Foreground="Black" />
-        <Label x:Name="txtWelcomeMessage" Content="Hello, Administrator" Canvas.Left="940" Canvas.Top="10" Height="50" Width="315" HorizontalContentAlignment="Right" FontSize="25" FontStyle="Italic" />
+        <Label x:Name="txtWelcomeMessage" Content="Hello, User" Canvas.Left="940" Canvas.Top="10" Height="50" Width="315" HorizontalContentAlignment="Right" FontSize="25" FontStyle="Italic" />
 
         <Rectangle Height="94" Width="1171" Stroke="Black" Fill="AntiqueWhite" RadiusX="10" RadiusY="10" Canvas.Left="47" Canvas.Top="140" />
         <Label Content="Description" Foreground="Black" Height="28" Width="71" Canvas.Left="78" Canvas.Top="141" />
         <TextBox x:Name="txtDescriptionSearch" Height="45" Width="303" TabIndex="0" TextWrapping="Wrap" Canvas.Left="78" Canvas.Top="169" />
-        <Label Content="Type's Name" Foreground="Black" Height="28" Width="71" Canvas.Left="423" Canvas.Top="141" />
+        <Label Content="Type's Name" Foreground="Black" Height="28" Width="78" Canvas.Left="423" Canvas.Top="141" />
         <TextBox x:Name="txtTypeNameSearch" Height="45" Width="185" TabIndex="1" TextWrapping="Wrap" Canvas.Left="423" Canvas.Top="169"/>
         <Label Content="Capacity" Foreground="Black" Height="28" Width="72" Canvas.Left="643" Canvas.Top="141" />
-        <TextBox x:Name="nbCapacitySearch" Height="45" TextWrapping="Wrap" Width="186" TabIndex="2" Canvas.Left="643" Canvas.Top="169" />
-        <Button x:Name="btnSearch" Content="Search Room" Height="50" Width="262" TabIndex="3" Canvas.Left="919" Canvas.Top="166"/>
+        <TextBox x:Name="txtCapacitySearch" Height="45" TextWrapping="Wrap" Width="186" TabIndex="2" Canvas.Left="643" Canvas.Top="169" />
+        <Button x:Name="btnSearch" Content="Search Room" Height="50" Width="262" TabIndex="3" Canvas.Left="919" Canvas.Top="166" Click="btnSearch_Click"/>
 
         <StackPanel Orientation="Horizontal">
             <DataGrid x:Name="dgHotel" Height="310" Width="930" Margin="40,289,0,0" AutoGenerateColumns="False" TabIndex="8" >

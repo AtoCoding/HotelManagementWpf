@@ -24,7 +24,12 @@ namespace Wpf_Hms
         {
             var roomsInfor = _RoomInformationService.GetAll();
 
-            dgHotel.ItemsSource = roomsInfor;
+            LoadDataWindow(roomsInfor);
+        }
+
+        private void LoadDataWindow(List<RoomInformation> roomsInformation)
+        {
+            dgHotel.ItemsSource = roomsInformation;
             dgHotel.Items.Refresh();
         }
 
@@ -86,6 +91,18 @@ namespace Wpf_Hms
         private void btnQuit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            string? descSearch = txtDescriptionSearch.Text;
+            string? typeNameSearch = txtTypeNameSearch.Text;
+            int capacitySearch = 0;
+            _ = int.TryParse(txtCapacitySearch.Text, out capacitySearch);
+
+            var roomsInformation = _RoomInformationService.Search(descSearch, typeNameSearch, capacitySearch);
+
+            LoadDataWindow(roomsInformation);
         }
     }
 }
