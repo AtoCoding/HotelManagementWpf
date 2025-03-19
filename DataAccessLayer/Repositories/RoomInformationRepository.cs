@@ -54,17 +54,17 @@ namespace DataAccessLayer.Repositories
             return _RoomInformations;
         }
 
-        public List<RoomInformation> Search(string description, string typeName, int capacity)
+        public List<RoomInformation> Search(string? description, string? typeName, int capacity)
         {
             List<RoomInformation> result = _RoomInformations.ToList();
 
             if (!string.IsNullOrEmpty(description))
             {
-                result.RemoveAll(x => !x.RoomDescription!.Contains(description));
+                result.RemoveAll(x => !x.RoomDescription!.ToLower().Contains(description.ToLower()));
             }
             if (!string.IsNullOrEmpty(typeName))
             {
-                result.RemoveAll(x => !x.RoomType!.RoomTypeName!.Contains(typeName));
+                result.RemoveAll(x => !x.RoomType!.RoomTypeName!.ToLower().Contains(typeName.ToLower()));
             }
             if (capacity > 0)
             {
@@ -72,6 +72,11 @@ namespace DataAccessLayer.Repositories
             }
 
             return result;
+        }
+
+        public List<RoomInformation> Search(string? fullName, string? telephone, string? emailAddress)
+        {
+            return [];
         }
 
         public RoomInformation? Update(RoomInformation data)

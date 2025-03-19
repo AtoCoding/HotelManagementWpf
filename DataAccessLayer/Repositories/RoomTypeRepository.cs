@@ -44,7 +44,12 @@ namespace DataAccessLayer.Repositories
             return _RoomTypes;
         }
 
-        public List<RoomType> Search(string description, string typeName, int capacity)
+        public List<RoomType> Search(string? description, string? typeName, int capacity)
+        {
+            return [];
+        }
+
+        public List<RoomType> Search(string? fullName, string? telephone, string? emailAddress)
         {
             return [];
         }

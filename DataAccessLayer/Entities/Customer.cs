@@ -16,6 +16,10 @@
         public CustomerStatus CustomerStatus { get; set; }
         public string? Password { get; set; }
 
+        public Customer()
+        {
+        }
+
         public Customer(int customerID, string? customerFullName, string? telephone, string? emailAddress, DateTime customerBirthday, CustomerStatus customerStatus, string? password)
         {
             CustomerID = customerID;

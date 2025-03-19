@@ -51,9 +51,19 @@ namespace BusinessLogicLayer.Services
             return _RoomInformationRepository.GetAll();
         }
 
-        public List<RoomInformation> Search(string description, string typeName, int capacity)
+        public List<RoomInformation> Search(string? description, string? typeName, int capacity)
         {
             return _RoomInformationRepository.Search(description, typeName, capacity);
+        }
+
+        public List<RoomInformation> Search(string? fullName, string? telephone, string? emailAddress)
+        {
+            return [];
+        }
+
+        public List<RoomInformation> Search(string? description, string? typeName, int? capacity)
+        {
+            throw new NotImplementedException();
         }
 
         public RoomInformation? Update(RoomInformation data)

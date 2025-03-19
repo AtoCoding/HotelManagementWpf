@@ -7,7 +7,7 @@ using Wpf_Hms.Admin;
 namespace Wpf_Hms
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for RoomInformationWindow.xaml
     /// </summary>
     public partial class RoomInformationWindow : Window
     {
@@ -35,8 +35,8 @@ namespace Wpf_Hms
 
         private void btnCreate_Click(object sender, RoutedEventArgs e)
         {
-            RoomDetailWindow roomDetailWindow = new(true, null!, dgHotel);
-            roomDetailWindow.ShowDialog();
+            RoomProcessingWindow roomProcessingWindow = new(true, null!, dgHotel);
+            roomProcessingWindow.ShowDialog();
         }
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
@@ -47,8 +47,8 @@ namespace Wpf_Hms
                 MessageBox.Show("Please select a room to update");
                 return;
             }
-            RoomDetailWindow roomDetailWindow = new(false, roomInformation, dgHotel);
-            roomDetailWindow.ShowDialog();
+            RoomProcessingWindow roomProcessingWindow = new(false, roomInformation, dgHotel);
+            roomProcessingWindow.ShowDialog();
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)

@@ -8,27 +8,27 @@ using DataAccessLayer.Entities;
 namespace Wpf_Hms
 {
     /// <summary>
-    /// Interaction logic for DetailWindow.xaml
+    /// Interaction logic for RoomProcessingWindow.xaml
     /// </summary>
-    public partial class RoomDetailWindow : Window
+    public partial class RoomProcessingWindow : Window
     {
         private readonly IService<RoomInformation> _RoomInformationService;
 
         private readonly IService<RoomType> _RoomTypeService;
 
-        private int NewRoomId;
+        private int newRoomId;
 
-        private bool IsCreateAction;
+        private bool isCreateAction;
 
-        private DataGrid DgHotel;
+        private DataGrid dgHotel;
 
-        public RoomDetailWindow(bool isCreateAction, RoomInformation roomInformation, DataGrid dgHotel)
+        public RoomProcessingWindow(bool isCreateAction, RoomInformation roomInformation, DataGrid dgHotel)
         {
             InitializeComponent();
             _RoomInformationService = RoomInformationService.GetInstance();
             _RoomTypeService = RoomTypeService.GetInstance();
-            IsCreateAction = isCreateAction;
-            DgHotel = dgHotel;
+            this.isCreateAction = isCreateAction;
+            this.dgHotel = dgHotel;
             SetDefaultData(roomInformation);
         }
 
@@ -37,17 +37,17 @@ namespace Wpf_Hms
             LoadRoomStatus();
             LoadRoomType();
 
-            if (IsCreateAction)
+            if (isCreateAction)
             {
                 List<RoomInformation> roomInformations = _RoomInformationService.GetAll();
-                NewRoomId = roomInformations.Count + 1;
+                newRoomId = roomInformations.Count + 1;
 
-                bool isNotExisted = roomInformations.FirstOrDefault(x => x.RoomID == NewRoomId) == null;
+                bool isNotExisted = roomInformations.FirstOrDefault(x => x.RoomID == newRoomId) == null;
 
                 if (isNotExisted)
                 {
                     lbTitle.Content = "Create Hotel Room";
-                    txtRoomId.Text = NewRoomId.ToString();
+                    txtRoomId.Text = newRoomId.ToString();
                 } 
                 else
                 {
@@ -99,7 +99,7 @@ namespace Wpf_Hms
                 RoomTypeID = (int)cbxRoomType.SelectedValue
             };
 
-            if (IsCreateAction)
+            if (isCreateAction)
             {   
                 var dataAdd = _RoomInformationService.Add(roomInformation);
                 
@@ -128,8 +128,8 @@ namespace Wpf_Hms
                 }
             }
 
-            DgHotel.ItemsSource = _RoomInformationService.GetAll();
-            DgHotel.Items.Refresh();
+            dgHotel.ItemsSource = _RoomInformationService.GetAll();
+            dgHotel.Items.Refresh();
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)

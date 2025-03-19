@@ -71,7 +71,12 @@ namespace BusinessLogicLayer.Services
             return _CustomerRepository.GetAll();
         }
 
-        public List<Customer> Search(string description, string typeName, int capacity)
+        public List<Customer> Search(string? fullName, string? telephone, string? emailAddress)
+        {
+            return [];
+        }
+
+        public List<Customer> Search(string? description, string? typeName, int capacity)
         {
             return [];
         }
