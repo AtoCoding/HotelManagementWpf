@@ -1,11 +1,12 @@
-﻿using System.Linq;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Windows;
 using System.Windows.Controls;
 using BusinessLogicLayer.Services;
 using BusinessLogicLayer.Services.Interface;
 using DataAccessLayer.Entities;
+using ValidationResult = System.ComponentModel.DataAnnotations.ValidationResult;
 
-namespace Wpf_Hms
+namespace Wpf_Hms.Admin
 {
     /// <summary>
     /// Interaction logic for CustomerProcessingWindow.xaml
@@ -54,11 +55,12 @@ namespace Wpf_Hms
             {
                 lbTitle.Content = "Update Customer";
                 txtCustomerId.Text = customer.CustomerID.ToString();
-                txtCustomerFullName.Text = customer.CustomerFullName?.ToString();
-                txtTelephone.Text = customer.Telephone?.ToString();
-                txtEmailAddress.Text = customer.EmailAddress?.ToString();
-                dpCustomerBirthday.DisplayDate = customer.CustomerBirthday.Date;
-                cbxCustomerStatus.SelectedValue = (int)customer.CustomerStatus;
+                txtCustomerFullName.Text = customer.CustomerFullName;
+                txtTelephone.Text = customer.Telephone;
+                txtEmailAddress.Text = customer.EmailAddress;
+                dpCustomerBirthday.SelectedDate = customer.CustomerBirthday;
+                cbxCustomerStatus.SelectedValue = (int)customer.CustomerStatus!;
+                txtPassword.Text = customer.Password;
             }
         }
 
@@ -78,45 +80,58 @@ namespace Wpf_Hms
             Customer customer = new()
             {
                 CustomerID = int.Parse(txtCustomerId.Text),
-                CustomerFullName = txtCustomerFullName.Text,
-                Telephone = txtTelephone.Text,
-                EmailAddress = txtEmailAddress.Text,
-                CustomerBirthday = dpCustomerBirthday.DisplayDate,
-                CustomerStatus = (CustomerStatus)cbxCustomerStatus.SelectedValue,
-                Password = txtPassword.Text
+                CustomerFullName = txtCustomerFullName.Text ?? string.Empty,
+                Telephone = txtTelephone.Text ?? string.Empty,
+                EmailAddress = txtEmailAddress.Text ?? string.Empty,
+                CustomerBirthday = dpCustomerBirthday.SelectedDate != null ? dpCustomerBirthday.SelectedDate : null,
+                CustomerStatus = cbxCustomerStatus.SelectedValue != null ? (CustomerStatus)cbxCustomerStatus.SelectedValue : null,
+                Password = txtPassword.Text ?? string.Empty
             };
 
-            if (isCreateAction)
-            {   
-                var dataAdd = _CustomerService.Add(customer);
-                
-                if (dataAdd != null)
-                {
-                    MessageBox.Show("Create successfully!");
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("There is an error!");
-                }
-            } 
+            var validationResults = new List<ValidationResult>();
+            var context = new ValidationContext(customer);
+
+            bool isValid = Validator.TryValidateObject(customer, context, validationResults, true);
+
+            if (!isValid)
+            {
+                string errorMessages = string.Join("\n", validationResults.Select(e => e.ErrorMessage));
+                MessageBox.Show(errorMessages, "Validation Errors", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
             else
             {
-                var dataUpdate = _CustomerService.Update(customer);
-
-                if (dataUpdate != null)
+                if (isCreateAction)
                 {
-                    MessageBox.Show("Update successfully!");
-                    this.Close();
+                    var dataAdd = _CustomerService.Add(customer);
+
+                    if (dataAdd != null)
+                    {
+                        MessageBox.Show("Create successfully!");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("There is an error!");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("There is an error!");
-                }
-            }
+                    var dataUpdate = _CustomerService.Update(customer);
 
-            dgCustomer.ItemsSource = _CustomerService.GetAll();
-            dgCustomer.Items.Refresh();
+                    if (dataUpdate != null)
+                    {
+                        MessageBox.Show("Update successfully!");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("There is an error!");
+                    }
+                }
+
+                dgCustomer.ItemsSource = _CustomerService.GetAll();
+                dgCustomer.Items.Refresh();
+            }
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)

@@ -61,11 +61,6 @@ namespace BusinessLogicLayer.Services
             return [];
         }
 
-        public List<RoomInformation> Search(string? description, string? typeName, int? capacity)
-        {
-            throw new NotImplementedException();
-        }
-
         public RoomInformation? Update(RoomInformation data)
         {
             if (data != null)

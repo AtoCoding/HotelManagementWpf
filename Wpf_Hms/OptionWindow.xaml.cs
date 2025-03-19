@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using Wpf_Hms.Admin;
 
-namespace Wpf_Hms.Admin
+namespace Wpf_Hms
 {
     /// <summary>
     /// Interaction logic for OptionWindow.xaml
@@ -22,18 +11,18 @@ namespace Wpf_Hms.Admin
         /// <summary>
         /// Checking window for admin or customer
         /// </summary>
-        private readonly bool IsAdmin = false;
+        private readonly bool isAdmin = false;
 
         public OptionWindow(bool isAdmin)
         {
-            IsAdmin = isAdmin;
+            this.isAdmin = isAdmin;
             InitializeComponent();
             Canvas_Loaded();
         }
 
         private void Canvas_Loaded()
         {
-            if (IsAdmin)
+            if (isAdmin)
             {
                 AdminSession.Visibility = Visibility.Visible;
                 CustomerSession.Visibility = Visibility.Hidden;
@@ -47,7 +36,9 @@ namespace Wpf_Hms.Admin
 
         private void BtnCustomerManagement_Click(object sender, RoutedEventArgs e)
         {
-
+            CustomerInformationWindow customerInformationWindow = new CustomerInformationWindow();
+            customerInformationWindow.Show();
+            this.Close();
         }
 
         private void BtnRoomManagement_Click(object sender, RoutedEventArgs e)
@@ -59,9 +50,7 @@ namespace Wpf_Hms.Admin
         
         private void BtnReportManagement_Click(object sender, RoutedEventArgs e)
         {
-            //AdminMainWindow adminMainWindow = new AdminMainWindow();
-            //adminMainWindow.Show();
-            //this.Close();
+            MessageBox.Show("Comming soon . . .");
         }
 
         private void BtnBookingHistory_Click(object sender, RoutedEventArgs e)
@@ -71,9 +60,7 @@ namespace Wpf_Hms.Admin
 
         private void BtnProfile_Click(object sender, RoutedEventArgs e)
         {
-            //AdminMainWindow adminMainWindow = new AdminMainWindow();
-            //adminMainWindow.Show();
-            //this.Close();
+            
         }
     }
 }

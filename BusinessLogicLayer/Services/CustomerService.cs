@@ -21,7 +21,9 @@ namespace BusinessLogicLayer.Services
 
         public Customer Add(Customer data)
         {
-            return _CustomerRepository.Add(data);
+            if (data != null) return _CustomerRepository.Add(data);
+
+            return null!;
         }
 
         /// <summary>
@@ -73,7 +75,7 @@ namespace BusinessLogicLayer.Services
 
         public List<Customer> Search(string? fullName, string? telephone, string? emailAddress)
         {
-            return [];
+            return _CustomerRepository.Search(fullName, telephone, emailAddress);
         }
 
         public List<Customer> Search(string? description, string? typeName, int capacity)
@@ -83,7 +85,9 @@ namespace BusinessLogicLayer.Services
 
         public Customer? Update(Customer data)
         {
-            return _CustomerRepository.Update(data);
+            if (data != null) return _CustomerRepository.Update(data);
+
+            return null!;
         }
     }
 }
