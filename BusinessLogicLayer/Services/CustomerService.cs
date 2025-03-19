@@ -48,7 +48,7 @@ namespace BusinessLogicLayer.Services
             else
             {
                 List<Customer> customers = GetAll();
-                bool isExisted = customers.FirstOrDefault(x => x.EmailAddress == email && x.Password == password) != null;
+                bool isExisted = customers.FirstOrDefault(x => x.EmailAddress == email && x.Password == password && x.CustomerStatus == CustomerStatus.Active) != null;
                 return isExisted ? (isExisted, "Customer") : (isExisted, "Guest");
             }
         }

@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using Wpf_Hms.Admin;
+using Wpf_Hms.CustomerProfile;
 
 namespace Wpf_Hms
 {
@@ -13,9 +14,19 @@ namespace Wpf_Hms
         /// </summary>
         private readonly bool isAdmin = false;
 
+        private readonly string email = string.Empty;
+
         public OptionWindow(bool isAdmin)
         {
             this.isAdmin = isAdmin;
+            InitializeComponent();
+            Canvas_Loaded();
+        }
+
+        public OptionWindow(bool isAdmin, string email)
+        {
+            this.isAdmin = isAdmin;
+            this.email = email;
             InitializeComponent();
             Canvas_Loaded();
         }
@@ -55,12 +66,14 @@ namespace Wpf_Hms
 
         private void BtnBookingHistory_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Comming soon . . .");
         }
 
         private void BtnProfile_Click(object sender, RoutedEventArgs e)
         {
-            
+            CustomerProfileWindow customerProfileWindow = new CustomerProfileWindow(email);
+            customerProfileWindow.Show();
+            this.Close();
         }
     }
 }

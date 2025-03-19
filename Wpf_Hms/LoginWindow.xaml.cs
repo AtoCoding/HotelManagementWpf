@@ -46,7 +46,7 @@ namespace Wpf_Hms
                         this.Close();
                         break;
                     case "Customer":
-                        OptionWindow customerOptionWindow = new OptionWindow(false);
+                        OptionWindow customerOptionWindow = new OptionWindow(false, email);
                         customerOptionWindow.Show();
                         this.Close();
                         break;

@@ -12,7 +12,7 @@
         ResizeMode="NoResize">
     <Canvas>
         <Label Content="Customer's Information" Canvas.Left="28" Canvas.Top="31" Height="80" Width="580" FontWeight="Heavy" FontSize="45" FontStyle="Italic" Foreground="Black" />
-        <Label x:Name="txtWelcomeMessage" Content="Hello, User" Canvas.Left="940" Canvas.Top="10" Height="50" Width="315" HorizontalContentAlignment="Right" FontSize="25" FontStyle="Italic" />
+        <Label x:Name="txtWelcomeMessage" Content="Hello, Admin" Canvas.Left="940" Canvas.Top="10" Height="50" Width="315" HorizontalContentAlignment="Right" FontSize="25" FontStyle="Italic" />
 
         <Rectangle Height="94" Width="1171" Stroke="Black" Fill="AntiqueWhite" RadiusX="10" RadiusY="10" Canvas.Left="47" Canvas.Top="140" />
         <Label Content="FullName" Foreground="Black" Height="28" Width="71" Canvas.Left="78" Canvas.Top="141" />
